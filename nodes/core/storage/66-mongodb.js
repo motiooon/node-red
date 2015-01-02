@@ -192,6 +192,7 @@ module.exports = function(RED) {
                                     delete msg.projection;
                                     delete msg.sort;
                                     delete msg.limit;
+                                    delete msg.skip;
                                     node.send(msg);
                                 }
                             });
